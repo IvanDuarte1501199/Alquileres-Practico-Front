@@ -18,7 +18,7 @@ export class DatosPropiedadComponent implements OnInit {
   cantVeces: number;
   constructor(private _propiedadesRepoService: PropiedadesRepoService, private _alquileresRepoService: AlquileresRepoService, private _personasRepoService: PersonasRepoService) {
     this._propiedadesRepoService.getAllPropiedades();
-    this._propiedadesRepoService.getAllPropiedadesXduenio(this._personasRepoService.personaLogeada.id);
+    this._propiedadesRepoService.getAllPropiedadesXduenio();
     this._alquileresRepoService.getAllAlquileres();
   }
   //  cuantas veces y cuantos dias se ha alquilado una propiedad entre dos fechas
